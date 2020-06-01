@@ -105,4 +105,17 @@ export const storeProducts =[
         total:0
     },
 
-]
+];
+export const detailProduct =
+    {
+        id:1,
+        title:"Iphone 8",
+        img: "img/product-1.jpeg",
+        price: 10,
+        compagny:"IPHONE",
+        info:
+            "a inserer plutard",
+        inCart: false,
+        count:0,
+        total:0
+    };

@@ -1,4 +1,4 @@
-import React, {Component, component} from "react";
+import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import logo from "../mobile-phone.svg";
 import styled from "styled-components";

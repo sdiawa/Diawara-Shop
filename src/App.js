@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 
 import {Switch,Route} from 'react-router-dom';
-import logo from './logo.svg';
+import logo from './mobile-phone.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import Navbar from "./components/Navbar";
