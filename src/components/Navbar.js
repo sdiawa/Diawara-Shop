@@ -18,10 +18,15 @@ export default class Navbar extends Component{
             <ul className="navbar-nav align-items-center">
             <li className="nav-item ml-5">
                 <Link to="/" className="nav-link">
+
                 products
              </Link>
             </li>
             </ul>
+
+                <div className="col-5 mx-auto text-center text-justify text-white " >
+                    <h3>BIENVENUE CHEZ DSK PHONE</h3>
+                </div>
          <Link to='/cart' className="ml-auto">
              <ButtonContainer>
                  <span className="mr-2">

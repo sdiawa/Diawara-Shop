@@ -11,9 +11,7 @@ export default class ProductList extends Component{
         <React.Fragment>
             <div className="py-5">
                 <div className="container">
-                    <div className="col-10 mx-auto text-center text-title" >
-                        <h1> BIENVENUE CHEZ DSK PHONE</h1>
-                    </div>
+
                     <div/>
                     <Title name="notre" title="products"/>
 
