@@ -32,7 +32,7 @@ export default class Product extends Component{
                                {inCart?(<p className="text-capitalize mb-0" disabled>
                                    {""}
                                    ajouté
-                               </p>): (<i className="fa fa-cart-plus" aria-hidden="true"></i>
+                               </p>): (<i className="fa fa-cart-plus" />
                                )}
                            </button>
                        </div>)}
@@ -55,10 +55,10 @@ export default class Product extends Component{
 
 }
 
-Product.isPrototypeOf = {
+Product.propTypes = {
     product:PropTypes.shape({
         id:PropTypes.number,
-        img:PropTypes.String,
+        img:PropTypes.string,
         title:PropTypes.string,
         price:PropTypes.number,
         inCart: PropTypes.bool
@@ -67,54 +67,51 @@ Product.isPrototypeOf = {
 
 const ProductWrapper = styled.div`
 .card{
-border-color:transparent;
-transition: all 1s liner;
+    border-color: transparent;
+    transition: all 1s linear;
 }
-    .card-footer{
+.card-footer{
     background: transparent;
     border-top: transparent;
     transition: all 1s linear;
-    }
-    &:hover{
+}
+&:hover{
     .card{
-    border: 0.04rem solid rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 5px 0px (0,0,0,0.2)
+        boder: 0.04rem solid rgba(0,0,0,0.2);
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
     }
     .card-footer{
-    background: rgba(247, 247, 247);
+        background: rgba(247, 247, 247);
     }
-    
 }
 .img-container{
-position:relative;
-overflow:hidden;
+    position: relative;
+    overflow: hidden;
 }
 .card-img-top{
-transition: all 1s linear;
+    transition: all 1s linear;
 }
-.img-container:hover .card-img-top{
-transform: scale(1.2);
+.img-container: hover .card-img-top{
+    transform: scale(1.2);
 }
 .cart-btn{
-position: absolute;
-bottom:0;
-right:0;
-padding: 0.2rem 0.4rem;
-background: var(--lightBlue);
-border:none;
-color: var(--mainWhite);
-font-size:1.4rem;
-border-radius: 0.5rem 0 0 0;
-transform: translate(100%, 100%);
-transition: all 1s linear;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    background: var(--lightBlue);
+    border: none;
+    color: var(--mainWhite);
+    font-size: 1.4rem;
+    border-radius: 0.5rem 0 0 0;
+    transform: translate(100%, 100%);
+    transition: all 1s linear;
 }
 .img-container: hover .cart-btn{
-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
-.cart-btn:hover{
-color: var(--mainBlue);
-cursor: pointer;
-
+.cart-btn: hover{
+    color: var(--mainBlue);
+    cursor: pointer;
 }
-
-`;
+`
